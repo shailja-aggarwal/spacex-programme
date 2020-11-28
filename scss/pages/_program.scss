@@ -1,0 +1,195 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #efefef;
+    font-family: sans-serif;
+}
+
+header {
+
+    margin: 1rem;
+    padding: 1rem;
+
+    h1 {
+        font-weight: 600;
+        word-break: break-all;
+        margin: 0;
+        font-size: 4rem;
+    }
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    aside {
+        margin: 2em;
+        margin-top: 0;
+        background-color: white;
+        padding: 3em;
+        border-radius: 10px;
+        height: 100%;
+    }
+
+    .programs__container {
+        flex: 1;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-row-gap: 10px;
+        grid-column-gap: 10px;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+}
+
+footer {
+    margin-top: 20px;
+    ;
+    padding: 20px;
+    font-size: 16px;
+    position: fixed;
+    bottom: 0;
+    background-color: #efefef;
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+@media only screen and (min-width: 600px) {
+    .container {
+        width: 97%;
+        margin: 10px;
+    }
+
+    header {
+        margin: 10px;
+        padding: 10px;
+
+        h1 {
+            font-size: 30px;
+        }
+
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+
+        aside {
+            width: 95%;
+            margin: 0 10px 10px 10px;
+            padding: 10px;
+            height: fit-content;
+        }
+
+        .programs__container {
+            grid-template-columns: 100%;
+            margin-left: 0;
+            margin-right: 0;
+            ;
+        }
+
+    }
+
+}
+
+//Tablet View CSS
+// @media only screen and (min-width: 700px){
+//     .container {
+//         width: 97%;
+//         margin: 10px;
+//     }
+//
+//     header {
+//         margin: 10px;
+//         padding: 10px;
+//
+//         h1 {
+//             font-size: 30px;
+//         }
+//
+//     }
+//
+//     main {
+//         display: flex;
+//         flex-direction: column;
+//
+//         aside {
+//             width: 100%;
+//             margin: 0 10px 10px 20px;
+//             padding: 10px;
+//             height: fit-content;
+//         }
+//
+//         .programs__container {
+//             grid-template-columns: 50% 50%;
+//             margin-left: 0;
+//             margin-right: 0;
+//             ;
+//         }
+//
+//     }
+//
+// }
+
+//Desktop View CSS
+@media only screen and (min-width: 1024px) {
+    .container {
+        width: 96%;
+        margin: 10px;
+    }
+
+    header {
+        margin: 10px;
+        padding: 10px;
+
+        h1 {
+            font-size: 30px;
+        }
+
+    }
+
+    main {
+        flex-direction: row;
+
+        aside {
+            width: 20%;
+            margin: 0 10px 10px 20px;
+            background-color: white;
+            padding: 10px;
+            border-radius: 10px;
+            height: fit-content;
+        }
+
+        .programs__container {
+            grid-template-columns: 25% 25% 25% 25%;
+            grid-row-gap: 10px;
+            grid-column-gap: 10px;
+            margin-left: 0;
+            margin-right: 0;
+            ;
+        }
+
+    }
+}
+
+//Wide screen View CSS
+@media only screen and (min-width: 1440px) {
+    .container {
+        width: 1440px;
+        margin: auto;
+    }
+}
