@@ -6,6 +6,7 @@ import { renderRoutes } from 'react-router-config';
 import Routes from '../src/router/Routes';
 
 export default (pathname, store, context) => {
+
   const content = renderToString(
     <Provider store={store}>
       <StaticRouter location={pathname} context={context}>
@@ -13,8 +14,8 @@ export default (pathname, store, context) => {
       </StaticRouter>
     </Provider>
   );
+console.log(content);
 
-debugger
   return `
   <!DOCTYPE html>
       <html lang="en">

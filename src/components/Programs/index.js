@@ -43,7 +43,7 @@ class Programs extends Component {
               (
 
 			 	<div className="programs__container">
-				 	{data.map((item, i) => <ProgramItem	{...item} />)}
+				 	{data.map((item, i) => <ProgramItem	{...item} key = {i}/>)}
 			 	</div>
 
               )}
