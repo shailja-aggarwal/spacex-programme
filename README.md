@@ -9,11 +9,6 @@
 5. react-ssr-boilerplate
 6. Sass
 
-
-#repo-
-https://github.com/shailja-aggarwal/spacex-programme.git
-branch - master
-
 #Working-
 Client side is working fine but their in an issue with the server side rendering.
 
@@ -30,3 +25,8 @@ Styling - Scss lang is used for styling.
 4. action - ./src/action
 5. Routes - ./src/router
 6. Loader - ./src/common
+
+
+#repo-
+https://github.com/shailja-aggarwal/spacex-programme.git
+branch - master
